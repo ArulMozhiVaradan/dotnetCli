@@ -53,6 +53,8 @@ To Create MVC Project with Individual Authentication
 To Install Dotcli Entity Framework
 > dotnet tool install --global dotnet-ef
 
+To update Entity Framework migration
+> dotnet ef database update
 
 GIT Command
 1. git init
