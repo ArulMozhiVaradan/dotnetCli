@@ -1,0 +1,77 @@
+1. Install Node.js
+	-> To verify: npm -v
+2. Install Angular
+	-> npm install -g @angular/cli
+			|
+			-> For angular :
+				Create Project > ng new my-dream-app
+				Run Project > ng serve
+				For more info: https://cli.angular.io
+	-> To verify : ng --version
+3. Download and Install .Net Core SDK
+	-> To verify: dotnet
+4. Install VS code and Add below Extensions:
+	a. Auto Import
+	b. ASP.NET Helper
+	c. Beautify
+	d. C# by Microsoft
+	e. C# Extenstions
+	f. Docker by Microsoft
+	g. SQL Server by Microsoft
+	h. Rest Client
+	i. SVN
+	j. Material Icon
+	k. Live Server
+5. To create Project template
+	> dotnet new --install Microsoft.AspNetCore.SpaTemplates::*        (One time installation only)
+	- create project folder and Redirect to that folder.
+	> dotnet new angular
+	- now project template will be created. Then
+	> cd ClientApp
+	> npm install
+	> cd..
+	> dotnet restore
+	> dotnet run
+
+DotNet CLI
+- To Create Solution:
+	> dotnet new sln
+- To Create Project:
+	> dotnet new mvc 
+- To Add project in solution: 
+	> dotnet sln add MohitConstructionUI/MohitConstruction.csproj
+
+To refresh razor page on F5
+- Add Below Package:
+	> dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+- Add the following code in ConfigureServices method of Startup.cs:
+	** services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+To Create MVC Project with Individual Authentication
+> dotnet new mvc --auth Individual --use-local-db --name Studio
+
+
+
+GIT Command
+1. git init
+2. click commit in VS Code (OR) 
+	git commit -m "first commit"
+3. Add remote location
+	git remote add origin https://github.com/ArulMozhiVaradan/mohitconstruction.git
+4. Verify Remote location
+	git remote -v
+5. Push all files
+	git push -u origin master
+6. to view unpushed commits 
+	git log --branches --not --remotes
+
+7. Checkout from github
+	git clone [link to repo here]
+
+8. To Remove and add all changes (it is useful for gitignore, incase you added unwanted files or folder in git and want to delete those, then use below lines)
+	git rm -rf --cached .
+	git add .
+(Before executing this, commit all changes)
+	
+		
+	
