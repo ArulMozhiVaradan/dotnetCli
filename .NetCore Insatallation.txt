@@ -50,6 +50,8 @@ To refresh razor page on F5
 To Create MVC Project with Individual Authentication
 > dotnet new mvc --auth Individual --use-local-db --name Studio
 
+To Install Dotcli Entity Framework
+> dotnet tool install --global dotnet-ef
 
 
 GIT Command
